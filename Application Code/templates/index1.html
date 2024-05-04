@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("C://Users//admin//Desktop//New folder (2)//templates//image.jpg"); /* Add background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: top; /* Center the background image */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Add semi-transparent background */
+            border-radius: 8px;
+            padding: 40px; /* Increased padding */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%; /* Adjusted width */
+            max-width: 600px; /* Added max-width for responsiveness */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="C:\Users\admin\Desktop\New folder (2)\templates\image.jpg" alt="Test Image" style="width:100%;"> -->
+    <div class="container">
+       
+        <h1>Social Media Misinformation Dataset Collection and Management</h1>
+        <form action="/search" method="post">
+            <label for="search_query">Search ID:</label>
+            <input type="text" id="search_query" name="search_query">
+            <br>
+            <label for="search_type">Search Type:</label>
+            <select id="search_type" name="search_type">
+                <option value="user">User</option>
+                <option value="post">Post</option>
+                 <option value="post_metadata">Post Metadata</option>
+                <option value="post_source">Post Source</option>
+                <option value="post_reach_engagement">Post Reach Engagement</option>
+                <option value="post_analysis">Post Analysis</option>
+                <option value="user_political_affiliation">User Political Affiliation</option>
+                <option value="user_trust_score">User Trust Score</option>
+                <option value="user_posts">User Posts</option>
+                <option value="user_comments">User Comments</option>
+                <option value="commentor_profile">Commentor Profile</option>
+                <option value="commentor_political_affiliation">Commentor Political Affiliation</option>
+                <option value="commentor_trust_score">Commentor Trust Score</option>
+                <option value="commentor_comments">Commentor Comments</option>
+                <option value="commentor_interactions">Commentor Interactions</option>
+            </select>
+            </select>
+            <br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

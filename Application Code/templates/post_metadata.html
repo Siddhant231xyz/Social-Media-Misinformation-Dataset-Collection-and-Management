@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Metadata</title>
+</head>
+<body>
+    <h1>Post Metadata</h1>
+    <table>
+        <tr>
+            <th>Post ID</th>
+            <td>{{ post_metadata['Post_ID'] }}</td>
+        </tr>
+        <tr>
+            <th>Source ID</th>
+            <td>{{ post_metadata['Source_ID'] }}</td>
+        </tr>
+        <tr>
+            <th>Timestamp</th>
+            <td>{{ post_metadata['Timestamp'] }}</td>
+        </tr>
+        <tr>
+            <th>Source Type</th>
+            <td>{{ post_metadata['Source_Type'] }}</td>
+        </tr>
+        <tr>
+            <th>Source Credibility Score</th>
+            <td>{{ post_metadata['Source_Credibility_Score'] }}</td>
+        </tr>
+        <tr>
+            <th>Reach</th>
+            <td>{{ post_metadata['Reach'] }}</td>
+        </tr>
+        <tr>
+            <th>Engagement</th>
+            <td>{{ post_metadata['Engagement'] }}</td>
+        </tr>
+        <tr>
+            <th>Keywords</th>
+            <td>{{ post_metadata['Keywords'] }}</td>
+        </tr>
+        <tr>
+            <th>Sentiment</th>
+            <td>{{ post_metadata['Sentiment'] }}</td>
+        </tr>
+        <tr>
+            <th>Language</th>
+            <td>{{ post_metadata['Language'] }}</td>
+        </tr>
+    </table>
+</body>
+</html>

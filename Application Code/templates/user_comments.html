@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Comments</title>
+</head>
+<body>
+    <h1>User Comments</h1>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Comment ID</th>
+            <th>Likes Count</th>
+            <th>Reply Count</th>
+            <th>Share Count</th>
+        </tr>
+        {% for comment in user_comments %}
+        <tr>
+            <td>{{ comment.User_ID }}</td>
+            <td>{{ comment.Comment_ID }}</td>
+            <td>{{ comment.Likes_Count }}</td>
+            <td>{{ comment.Reply_Count }}</td>
+            <td>{{ comment.Share_Count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Posts</title>
+</head>
+<body>
+    <h1>User Posts</h1>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Post ID</th>
+            <th>Share Count</th>
+            <th>Comment Count</th>
+            <th>Like Count</th>
+        </tr>
+        {% for post in user_posts %}
+        <tr>
+            <td>{{ post.User_ID }}</td>
+            <td>{{ post.Post_ID }}</td>
+            <td>{{ post.Share_Count }}</td>
+            <td>{{ post.Comment_Count }}</td>
+            <td>{{ post.Like_Count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
